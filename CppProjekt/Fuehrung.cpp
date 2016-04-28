@@ -14,6 +14,7 @@ CFuehrung::~CFuehrung()
 
 void CFuehrung::print()
 {
+
 }
 
 
