@@ -2,13 +2,8 @@
 #include "Person.h"
 class CSpieler : public CPerson
 {
-	enum e_position {
-		torwart = 1,
-		abwehr = 2,
-		mittelfeld = 3,
-		sturm = 4
-	};
 public:
+	enum e_position { torwart, abwehr, mittelfeld, sturm };
 	CSpieler();
 	virtual ~CSpieler();
 	virtual void print();
