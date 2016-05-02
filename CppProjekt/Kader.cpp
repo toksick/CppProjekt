@@ -2,12 +2,20 @@
 
 bool CKader::add(const CPerson &arg)
 {
-    CKader::pKaderMitglieder[0] = new CPerson;   
+    pKaderMitglieder[anzKader] = &arg;
+    anzKader++;
+    return true;
 }
-void CKader::print()
-{}
+const void CKader::print()
+{
+	for (int i = 0; i < anzKader; ++i)
+	{
+        cout << "-----------------------" << endl;
+		pKaderMitglieder[i]->print();
+	}
+}
 
 CKader::CKader()
 {
-    
+    anzKader = 0;
 }

@@ -6,7 +6,7 @@ class CTorwart :
 public:
 	CTorwart(string name, string vorname, unsigned int alter, e_position position, unsigned int nummer);
 	~CTorwart();
-	void print();
+	const void print();
 private:
 	unsigned int strafRaumBerherrschung;
 	unsigned int linienQualitaet;

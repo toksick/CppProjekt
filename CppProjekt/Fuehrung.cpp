@@ -13,13 +13,13 @@ CFuehrung::~CFuehrung()
 }
 
 
-void CFuehrung::print()
+const void CFuehrung::print()
 {
 	CPerson::print();
 	switch (this->aufgabe)
 	{
 	case praesident:
-		cout << "Aufgabe: Präsident" << endl;
+		cout << "Aufgabe: PrÃ¤sident" << endl;
 		break;
 	case vorstand:
 		cout << "Aufgabe: Vorstand" << endl;

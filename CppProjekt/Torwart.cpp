@@ -13,7 +13,7 @@ CTorwart::~CTorwart()
 {
 }
 
-void CTorwart::print()
+const void CTorwart::print()
 {
 	CSpieler::print();
 	cout << "Kommunikation mit der Abwehr: " << this->abwehrKommunikation;
