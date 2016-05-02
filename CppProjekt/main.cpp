@@ -138,6 +138,8 @@ int main() {
 	CFuehrung* fuehrung = new CFuehrung("Max", "Mustermann", 55, CFuehrung::praesident);
 	fuehrung->print();
 
-	system("pause");
+	std::cout << "Press enter to continue ..."; 
+    std::cin.get(); 
+	//system("pause");
 	return 0;
 }

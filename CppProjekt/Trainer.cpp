@@ -13,7 +13,7 @@ CTrainer::~CTrainer()
 }
 
 
-void CTrainer::print()
+const void CTrainer::print()
 {
 	CPerson::print();
 	cout << "Lizenzstufe: " << this->lizenzStufe << endl;

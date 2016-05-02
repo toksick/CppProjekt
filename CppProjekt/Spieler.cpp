@@ -13,7 +13,7 @@ CSpieler::~CSpieler()
 }
 
 
-void CSpieler::print()
+const void CSpieler::print()
 {
 	CPerson::print();
 	cout << "Position: " << this->position << " Nummer: " << this->nummer << endl;

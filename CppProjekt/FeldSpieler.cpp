@@ -14,7 +14,7 @@ CFeldSpieler::~CFeldSpieler()
 }
 
 
-void CFeldSpieler::print()
+const void CFeldSpieler::print()
 {
 	CSpieler::print();
 	cout << "Ballbeherrschung: " << this->ballBeherrschung << endl;
