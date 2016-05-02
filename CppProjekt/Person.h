@@ -1,6 +1,7 @@
 #pragma once
-#pragma
 #include <string>
+#include <iostream>
+#include <fstream>
 using namespace std;
 
 class CPerson

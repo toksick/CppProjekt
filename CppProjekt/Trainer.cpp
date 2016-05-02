@@ -1,12 +1,12 @@
 #include "Trainer.h"
 
-
-
-CTrainer::CTrainer()
+CTrainer::CTrainer(string name, string vorname, unsigned int alter)
 {
-	lizenzStufe = 0;
+	this->name = name;
+	this->vorname = vorname;
+	this->alter = alter;
+	this->lizenzStufe = 0;
 }
-
 
 CTrainer::~CTrainer()
 {
@@ -15,12 +15,14 @@ CTrainer::~CTrainer()
 
 void CTrainer::print()
 {
+	CPerson::print();
+	cout << "Lizenzstufe: " << this->lizenzStufe << endl;
+
 }
 
-
-CTrainer::CTrainer(string name, string vorname, unsigned int alter)
+void CTrainer::setLizenzstufe(unsigned int lizenstufe)
 {
-	this->name = name;
-	this->vorname = vorname;
-	this->alter = alter;
+	this->lizenzStufe = lizenstufe;
 }
+
+
