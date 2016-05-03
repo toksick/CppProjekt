@@ -1,13 +1,14 @@
+#pragma once
 #include <string>
 #include "Person.h"
 
 class CKader {
- private:
-    unsigned int anzKader;
-    static const int maxAnzKader = 50;
-    const CPerson * pKaderMitglieder[maxAnzKader];
  public:
+    static const int maxAnzKader = 50;
     CKader();
     bool add(const CPerson &arg);
-    const void print();
+    void print() const;
+ private:
+    int anzKader;
+    const CPerson * pKaderMitglieder[maxAnzKader];
 };
