@@ -8,12 +8,7 @@ CFuehrung::CFuehrung(string name, string vorname, unsigned int alter, e_aufgabe 
 	this->aufgabe = aufgabe;
 }
 
-CFuehrung::~CFuehrung()
-{
-}
-
-
-const void CFuehrung::print()
+void CFuehrung::print() const
 {
 	CPerson::print();
 	switch (this->aufgabe)

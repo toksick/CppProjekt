@@ -11,8 +11,7 @@ protected:
 	string vorname;
 	unsigned int alter;
 public:
-	const virtual void print();
+	virtual void print() const;
 	CPerson();
-	~CPerson();
 };
 

@@ -6,7 +6,7 @@ bool CKader::add(const CPerson &arg)
     anzKader++;
     return true;
 }
-const void CKader::print()
+void CKader::print() const
 {
 	for (int i = 0; i < anzKader; ++i)
 	{

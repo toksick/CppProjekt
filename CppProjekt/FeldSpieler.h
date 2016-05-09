@@ -1,4 +1,5 @@
 #pragma once
+#pragma once
 #include "Spieler.h"
 class CFeldSpieler :
 	public CSpieler
@@ -6,8 +7,7 @@ class CFeldSpieler :
 public:
 	enum e_starkerFuss {unKnown, links, rechts, gleich};
 	CFeldSpieler(string name, string vorname, unsigned int alter, e_position position, unsigned int nummer);
-	~CFeldSpieler();
-	const void print();
+	void print() const;
 private:
 	e_starkerFuss starkerFuss;
 	unsigned int verteidigung;

@@ -7,13 +7,7 @@ CSpieler::CSpieler()
 	nummer = 0;
 }
 
-
-CSpieler::~CSpieler()
-{
-}
-
-
-const void CSpieler::print()
+void CSpieler::print() const
 {
 	CPerson::print();
 	cout << "Position: " << this->position << " Nummer: " << this->nummer << endl;

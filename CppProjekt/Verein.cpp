@@ -11,9 +11,9 @@ bool CVerein::add(const CKader &arg)
     pMyKader = &arg;
     return true;
 }
-const void CVerein::print()
+void CVerein::print() const
 {
-    pMyKader->print();
+	pMyKader->print();
     for (int i = 0; i < anzFuehrung; ++i) {
         cout << "---------------------" << endl;
         fuehrungMitglieder[i]->print();
