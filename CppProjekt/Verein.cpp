@@ -22,5 +22,16 @@ void CVerein::print() const
 
 CVerein::CVerein()
 {
+	for (int i = 0; i < maxAnzFuehrung; ++i) {
+		fuehrungMitglieder[i] = 0x0;
+	}
     anzFuehrung = 0;
+}
+
+CVerein::~CVerein() {
+	for (int i = 0; i < maxAnzFuehrung; ++i) {
+		if (fuehrungMitglieder != 0x0) {
+			delete fuehrungMitglieder[i];
+		}
+	}
 }

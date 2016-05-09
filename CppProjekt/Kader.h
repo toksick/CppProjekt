@@ -6,6 +6,7 @@ class CKader {
  public:
     static const int maxAnzKader = 50;
     CKader();
+	~CKader();
     bool add(const CPerson &arg);
     void print() const;
  private:

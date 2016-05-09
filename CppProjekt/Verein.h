@@ -8,6 +8,7 @@ class CVerein {
 public:
     static const int maxAnzFuehrung = 20;
     CVerein();
+	~CVerein();
     bool add(const CFuehrung &arg);
     bool add(const CKader &arg);
     void print() const;
