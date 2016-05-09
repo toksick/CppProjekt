@@ -17,5 +17,15 @@ void CKader::print() const
 
 CKader::CKader()
 {
+	for (int i = 0; i < maxAnzKader; ++i) {
+		pKaderMitglieder[i] = 0x0;
+	}
     anzKader = 0;
+}
+CKader::~CKader() {
+	for (int i = 0; i < maxAnzKader; ++i) {
+		if (pKaderMitglieder[i] != 0x0) {
+			delete pKaderMitglieder[i];
+		}
+	}
 }
