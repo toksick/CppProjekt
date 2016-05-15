@@ -12,4 +12,7 @@ class CKader {
  private:
     int anzKader;
     const CPerson * pKaderMitglieder[maxAnzKader];
+ public:
+ 	int getAnzKader() { return anzKader; }
+ 	void setAnzKader(int amount) { this->anzKader = amount; }
 };
