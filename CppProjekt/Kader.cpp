@@ -2,13 +2,13 @@
 
 bool CKader::add(const CPerson &arg)
 {
-    pKaderMitglieder[anzKader] = &arg;
-    anzKader++;
+    pKaderMitglieder[getAnzKader()] = &arg;
+    setAnzKader(getAnzKader()+1);
     return true;
 }
 void CKader::print() const
 {
-	for (int i = 0; i < anzKader; ++i)
+	for (int i = 0; i < getAnzKader(); ++i)
 	{
         cout << "-----------------------" << endl;
 		pKaderMitglieder[i]->print();
@@ -20,7 +20,7 @@ CKader::CKader()
 	for (int i = 0; i < maxAnzKader; ++i) {
 		pKaderMitglieder[i] = 0x0;
 	}
-    anzKader = 0;
+    setAnzKader(0);
 }
 CKader::~CKader() {
 	for (int i = 0; i < maxAnzKader; ++i) {
