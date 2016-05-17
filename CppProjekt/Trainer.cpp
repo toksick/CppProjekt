@@ -5,19 +5,19 @@ CTrainer::CTrainer(string name, string vorname, unsigned int alter)
 	this->name = name;
 	this->vorname = vorname;
 	this->alter = alter;
-	setLizenzstufe(0);
+	this->lizenzStufe = 0;
 }
 
 void CTrainer::print() const
 {
 	CPerson::print();
-	cout << "Lizenzstufe: " << getLizenzStufe() << endl;
+	cout << "Lizenzstufe: " << this->lizenzStufe << endl;
 
 }
 
 void CTrainer::setLizenzstufe(unsigned int lizenstufe)
 {
-	setLizenzstufe(lizenstufe);
+	this->lizenzStufe = lizenstufe;
 }
 
 
