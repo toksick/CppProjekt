@@ -14,5 +14,14 @@ private:
 	unsigned int ballBeherrschung;
 	unsigned int schussKraft;
 	unsigned int schussGenauigkeit;
+public:
+	unsigned int getVerteidigung() { return verteidigung; }
+	unsigned int getBallbeherrschung() { return ballBeherrschung; }
+	unsigned int getSchussKraft() { return schussKraft; }
+	unsigned int getSchussgenauigkeit() { return schussGenauigkeit; }
+	void setVerteidigung(unsigned int defence) { this->verteidigung = defence; }
+	void setBallbeherrschung(unsigned int ballcontrol) { this->ballBeherrschung = ballcontrol; }
+	void setSchusskraft(unsigned int shootpower) { this->schussKraft = shootpower; }
+	void setSchussgenauigkeit(unsigned int shootefficiency) { this->schussGenauigkeit = shootefficiency; }
 };
 

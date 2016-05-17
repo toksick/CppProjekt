@@ -16,4 +16,7 @@ public:
     const CKader * pMyKader;
     int anzFuehrung;
     const CFuehrung * fuehrungMitglieder[maxAnzFuehrung];
+ public:
+ 	int getAnzFuehrung() { return anzFuehrung; }
+ 	void setAnzFuehrung(int amount) { this->anzFuehrung = amount; }
 };
