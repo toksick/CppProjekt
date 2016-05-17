@@ -2,8 +2,8 @@
 
 bool CVerein::add(const CFuehrung &arg)
 {
-    CVerein::fuehrungMitglieder[anzFuehrung] = &arg;
-    anzFuehrung++;
+    CVerein::fuehrungMitglieder[getAnzFuehrung()] = &arg;
+    setAnzFuehrung(getAnzFuehrung()+1);
     return true;
 }
 bool CVerein::add(const CKader &arg)
@@ -14,7 +14,7 @@ bool CVerein::add(const CKader &arg)
 void CVerein::print() const
 {
 	pMyKader->print();
-    for (int i = 0; i < anzFuehrung; ++i) {
+    for (int i = 0; i < getAnzFuehrung(); ++i) {
         cout << "---------------------" << endl;
         fuehrungMitglieder[i]->print();
     }
@@ -25,7 +25,7 @@ CVerein::CVerein()
 	for (int i = 0; i < maxAnzFuehrung; ++i) {
 		fuehrungMitglieder[i] = 0x0;
 	}
-    anzFuehrung = 0;
+    setAnzFuehrung(0);
 }
 
 CVerein::~CVerein() {
