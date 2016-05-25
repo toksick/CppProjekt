@@ -8,18 +8,13 @@ CFuehrung::CFuehrung(string name, string vorname, unsigned int alter, e_aufgabe 
 	this->aufgabe = aufgabe;
 }
 
-CFuehrung::~CFuehrung()
-{
-}
-
-
-void CFuehrung::print()
+void CFuehrung::print() const
 {
 	CPerson::print();
 	switch (this->aufgabe)
 	{
 	case praesident:
-		cout << "Aufgabe: Präsident" << endl;
+		cout << "Aufgabe: PrÃ¤sident" << endl;
 		break;
 	case vorstand:
 		cout << "Aufgabe: Vorstand" << endl;

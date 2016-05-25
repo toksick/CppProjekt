@@ -7,14 +7,13 @@ CFeldSpieler::CFeldSpieler(string name, string vorname, unsigned int alter, e_po
 	this->alter = alter;
 	this->position = position;
 	this->nummer = nummer;
+	this->ballBeherrschung = 0;
+	this->schussGenauigkeit = 0;
+	this->schussKraft = 0;
+	this->verteidigung = 0;
 }
 
-CFeldSpieler::~CFeldSpieler()
-{
-}
-
-
-void CFeldSpieler::print()
+void CFeldSpieler::print() const
 {
 	CSpieler::print();
 	cout << "Ballbeherrschung: " << this->ballBeherrschung << endl;

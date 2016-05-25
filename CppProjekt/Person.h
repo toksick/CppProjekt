@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
-#include <fstream>
+//#include <fstream>
 using namespace std;
 
 class CPerson
@@ -11,8 +11,7 @@ protected:
 	string vorname;
 	unsigned int alter;
 public:
-	virtual	void print();
+	virtual void print() const;
 	CPerson();
-	~CPerson();
 };
 

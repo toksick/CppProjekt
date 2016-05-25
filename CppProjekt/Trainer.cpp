@@ -8,12 +8,7 @@ CTrainer::CTrainer(string name, string vorname, unsigned int alter)
 	this->lizenzStufe = 0;
 }
 
-CTrainer::~CTrainer()
-{
-}
-
-
-void CTrainer::print()
+void CTrainer::print() const
 {
 	CPerson::print();
 	cout << "Lizenzstufe: " << this->lizenzStufe << endl;
