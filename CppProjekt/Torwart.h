@@ -10,5 +10,12 @@ private:
 	unsigned int strafRaumBerherrschung;
 	unsigned int linienQualitaet;
 	unsigned int abwehrKommunikation;
+public:
+	unsigned int getStrafRaumBerherrschung() { return strafRaumBerherrschung; }
+	unsigned int getLinienQualitaet() { return linienQualitaet; }
+	unsigned int getAbwehrKommunikation() { return abwehrKommunikation; }
+	void setStrafRaumBerherrschung(unsigned int areacontrol) { this->strafRaumBerherrschung = areacontrol; }
+	void setLinienQualitaet(unsigned int linequality) { this->linienQualitaet = linequality; }
+	void setAbwehrKommunikation(unsigned int defencecommunication) { this->abwehrKommunikation = defencecommunication; }
 };
 
